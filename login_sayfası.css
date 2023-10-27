@@ -1,0 +1,271 @@
+body{
+    background-image: url(https://preview.colorlib.com/theme/bootstrap/login-form-20/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+   }
+   .kutu{
+        position:absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+   
+   #user_logo{
+      position: absolute;
+      top: 110px;
+      left:48%;
+      height: 80px;
+      width: 150px;
+      color:white;
+      z-index:2;
+    }
+
+   #baslik{
+        position: relative;
+        top:50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        z-index: 2;
+   }
+   #login{
+        position: relative;
+        top: 140px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 2;
+   }
+   #kullanici_adi,#sifre{
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.08);
+        width: 300px;
+        height: 40px;
+        color:white;
+        text-indent:20px;
+        border-color: rgba(255, 255, 255, 0.08);
+        z-index:2;
+        font-family: "Lato", Arial, sans-serif;
+        transition: all 0.3 ease;
+        font-size: 16px;
+   }
+
+   #kullanici_adi:hover,#sifre:hover{
+        background-color: rgba(255, 255, 255, 0.02);
+   }
+    #kullanici_adi:focus,#sifre:focus{
+        background-color: rgba(255, 255, 255, 0.02);
+   }
+   #login i{
+        position: absolute;
+        left: 885px;
+        top: 80px;
+        color:white;
+   }
+   #login i:active{
+        color:black;
+        
+   }
+   input[type="checkbox"]{
+        display: none;
+   }
+   input[type="checkbox"]+label{
+        display: block;
+        position: absolute;
+        left:622px;
+        top: 405px;
+        width:18px;
+        height:18px;
+        z-index: 3;
+        cursor: pointer;
+    }
+   input[type="checkbox"]+label::before{
+            font-family: "FontAwesome";
+            content:"\f00c";
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 5px;
+            display: inline-block;
+            width: 15px;;
+            height: 15px;
+            padding: 2px;
+            color: transparent;
+   }
+   input[type=checkbox]:checked+label::before{
+            background: #fbceb5 ;
+            color: rgb(70, 70, 70);  /*tikin rengi*/
+            transition: 0.3s; 
+   }
+   #remember_me{
+        position:absolute;
+        left:655px;
+        top: 405px;
+        color:#fbceb5 ;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 2;
+   }
+   #forgot_password{
+        position: absolute;
+        left: 795px;
+        top:405px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        z-index:2;
+        text-decoration: none;
+   }
+    #forgot_password:hover{
+        text-decoration: underline;  
+        cursor: pointer;
+    }
+    #şifremi_unuttum_link{
+         color:white;
+         text-decoration: none;
+    }
+    #giris_yap{
+        border-radius: 25px;
+        background-color: #fbceb5 ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        width: 308px;
+        height: 48px;
+        z-index: 2;
+        border-color: #fbceb5 ;
+
+    }
+    [type="submit"]:not(:disabled) {
+        cursor: pointer;
+    }
+  input[type="text"]::placeholder,input[type="password"]::placeholder{
+    font-size: 14px;
+    color:white;
+    font-family: "Lato", Arial, sans-serif;
+  }
+  
+  #yazi{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    z-index: 2;
+    position: relative;
+    top: 185px;
+    text-align: center;
+  }
+  #btn1{
+    position: absolute;
+    left:40%;
+    top: 480px;
+    background-color: white;
+    color:rgb(63, 63, 63);
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    float:left;
+    height: 45px;
+    width:300px;
+    z-index: 3;
+    border-color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  #btn2{
+    position: absolute;
+    left:40%;
+    top: 540px;
+    background-color: white;
+    color:rgb(63, 63, 63);
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    float:left;
+    height: 45px;
+    width:300px;
+    z-index: 3;
+    border-color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  #btn3{
+    position: absolute;
+    left:40%;
+    top: 600px;
+    background-color: white;
+    color:rgb(63, 63, 63);
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    float:left;
+    height: 45px;
+    width:300px;
+    z-index: 3;
+    border-color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  #btn1:hover, #btn2:hover, #btn3:hover{
+   background-color: rgb(63, 63, 63);
+   color:white;
+   border-color: rgb(63, 63, 63);
+  }
+  #google_icon{
+    margin-left:-50px;
+    padding: 20px;
+  }
+  #facebook_icon{
+    margin-left: -33px;
+    padding: 19px;
+  }
+  #github_icon{
+    margin-left: -53px;
+    padding: 18px;
+  }
+  .hesap_yazisi{
+   position: absolute;
+   left:43%;
+   top: 670px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 13px;
+  }
+  #hesap_olustur{
+   color:#fbceb5;
+   text-decoration: none;
+  }
+  #hesap_olustur:hover{
+   text-decoration: underline;
+  }
+  
+  @media screen and (max-width:1500px){
+   #forgot_password{
+    position:absolute;
+    left:calc(50% + 25px); 
+    
+   }
+   #remember_me{
+      position: absolute;
+      left:calc(50% - 120px); 
+    
+   }
+   input[type="checkbox"]+label{
+        position: absolute;
+        left:calc(50% - 150px); 
+   }
+   #login i{
+      position:absolute;
+      left: calc(52% + 20px);
+      transform: translateX(400%);
+   }
+   #btn1, #btn2, #btn3{
+      position: absolute;
+      left:calc(49% - 140px);
+   }
+   .hesap_yazisi{
+      position: absolute;
+      left:calc(50% - 100px);
+   }
+  }

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=tr-TR>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="tr">
+<meta charset="utf-8">
+<meta name="author" content="Beyza Bekdemir">
+<meta name="generator" content="Visual Studio Code">
+<meta name="description" content="Web sitesi için kayıt olma, hesap oluşturma sayfasıdır.">
+<meta name="keywords" content="sign-up, üyelik formu, kayıt ol, üye ol ">
+<meta name="rating" content="General">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+   
+<title>Sign Up</title>
+
+<style type="text/css">
+  @import url(signup_paneli.css);
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="singup_kutusu">
+   <div id="uyeol"><h2>ÜYE OL</h2></div>
+   <form class="signup_form">
+      <div>
+         <p class="basliklar">E-mail</p>
+         <input type="email" name="email" placeholder="E-mailinizi giriniz..." id="email">
+      </div>
+      <div>
+        <p class="basliklar"> &nbsp; &nbsp; &nbsp; &nbsp; Kullanıcı Adı</p>
+        <input type="text" placeholder="Kullanıcı adınızı giriniz..." id="username">
+     </div>
+     <div>
+        <p class="basliklar">Şifre</p>
+        <input type="password" placeholder="Şifrenizi giriniz..." id="sifre">
+        <span id="icon" onclick="togglePassword()"><i id="eye_icon" class="fa-solid fa-eye"></i></span>
+    </div><br><br>
+      <br><input id="kayit_ol" type="submit" name="kayit_ol" value="KAYIT OL">
+   </form>
+   <div class="tik_kutusu">
+      <input id="tik" type="checkbox" name="tik" checked>
+      <label for="tik" class="my_checkbox"></label>
+      <span id="gizlilik">Gizlilik Sözleşmesini okudum, kabul ediyorum</span>
+  </div>
+  <div class="hesap_yazisi"><p>Hesabın var mı? <a href="login_sayfası.html" id="oturum_ac">Oturum Aç</a></p></div>
+  </div>
+</div>
+<script>
+   function togglePassword() {
+   var element = document.getElementById('sifre');
+   element.type = (element.type == 'password' ? 'text' : 'password');
+
+   var result = document.getElementById('eye_icon');
+   result.classList.toggle('fa-eye');
+   result.classList.toggle('fa-eye-slash');
+}
+
+</script>
+</body>
+</html>

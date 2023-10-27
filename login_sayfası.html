@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang=tr-TR>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="tr">
+<meta charset="utf-8">
+<meta name="author" content="Beyza Bekdemir">
+<meta name="generator" content="Visual Studio Code">
+<meta name="description" content="Web sitesi için giriş yapma sayfasıdır.">
+<meta name="keywords" content="giriş yap, login, web site ">
+<meta name="rating" content="General">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+<title>Login</title>
+
+<style type="text/css">
+   @import url(login_sayfası.css);
+</style>
+</head>
+
+<body>
+   <div class="kutu">
+      <div class="login_kutusu">
+        <i id="user_logo" class="fas fa-circle-user fa-5x"></i>
+        <h2 id="baslik">GİRİŞ YAP</h2>
+         <div>
+           <form id="login">
+              <div><input id="kullanici_adi" type="text" name="kullanici_adi" placeholder="Kullanıcı Adı"></div><br>
+              <div><input id="sifre" type="password" name="sifre" placeholder="Şifre">
+           
+              <span id="icon" onclick="togglePassword()"><i id="eye_icon" class="fa-solid fa-eye"></i></span> 
+              </div><br>
+              <input id="giris_yap" type="submit" name="giris_yap" value="GİRİŞ YAP"><br>
+           </form>
+         </div>
+         <div class="tik_kutusu">
+            <input id="tik" type="checkbox" name="tik" checked>
+            <label for="tik" class="my_checkbox"></label>
+            <span id="remember_me">Beni Hatırla</span>
+            <span id="forgot_password"><a id="şifremi_unuttum_link" href="#">Şifremi Unuttum</a></span>
+        </div>
+
+        <p id="yazi">——— Veya ———</p>
+        <div class="btn">
+        <div><button id="btn1">
+          <i class="fa-brands fa-google fa-lg" id="google_icon"></i>
+              Google ile Devam Et
+             </button>
+        </div>
+
+         <div><button id="btn2"><i class="fa-brands fa-facebook fa-xl" id="facebook_icon"></i>
+            Facebook ile Devam Et
+         </button></div>
+
+         <div><button id="btn3"><i class="fa-brands fa-github fa-xl" id="github_icon"></i>
+            Github ile Devam Et</button></div>
+        </div>
+        <div class="hesap_yazisi"><p>Hesabın yok mu? <a href="signup_paneli.html" id="hesap_olustur">Hesap Oluştur</a></p></div>
+
+      </div>
+   </div>
+   <script>
+      function togglePassword() {
+      var element = document.getElementById('sifre');
+      element.type = (element.type == 'password' ? 'text' : 'password');
+  
+      var result = document.getElementById('eye_icon');
+      result.classList.toggle('fa-eye');
+      result.classList.toggle('fa-eye-slash');
+  }
+ 
+  </script>
+</body>
+</html>
